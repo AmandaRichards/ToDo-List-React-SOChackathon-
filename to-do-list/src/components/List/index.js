@@ -1,16 +1,18 @@
-import { useState } from "react";
-import todoLists from "../../libs/data";
 import ListItem from "../List-item";
 
-function List(props) {
-  const [lists, setLists] = useState(todoLists);
+function List({lists, text, date, removeToDo}) {
+  
   return (
     <ul>
-      {lists.map(function (props, index) {
-        return <ListItem key={index} text={props.text} date={props.date} />;
+     {lists.map(function (list, index) {
+        return <ListItem text={list} onDelete={function(){
+          removeToDo(index)}}/>;
       })}
+        {/* <ListItem  text={text} date={date} onDelete={onDelete} />   */}
     </ul>
   );
 }
 
 export default List;
+
+//key={listItemId}

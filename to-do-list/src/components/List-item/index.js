@@ -1,10 +1,11 @@
-function ListItem({ listItemId, text, date }) {
+function ListItem({ index, text, date, onDelete }) {
   return (
-    <li key={listItemId}>
+    <li key={index}>
       {text}
       <span> {date}</span>
+      <button onClick={onDelete}>Delete</button>
     </li>
-  );
+  )
 }
 
 export default ListItem;

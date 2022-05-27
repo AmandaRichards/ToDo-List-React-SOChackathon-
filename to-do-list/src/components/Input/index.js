@@ -3,35 +3,43 @@ import todoLists from "../../libs/data";
 // Get the value from the input field
 // push the value to the array (list data)
 
-let textInput = React.createRef();
+function Input({onSubmit}){
+  const[text, setText] = useState('')
 
-// const [list, setList] = useState(todoLists);
-
-function handleClick(input) {
-  // setList(...list, {
-  //   listItemId: 5,
-  //   text: "Go to Tesco for buying a box of tea bags",
-  //   date: "07/01/22",
-  // });
-  console.log(textInput.current.value);
-  // const inputValue = textInput.current.value;
-  // return inputValue;
+function handleChange(e){
+setText(e.target.value)
 }
 
-function Button(props) {
-  return <button onClick={props.onClick}> Add me!</button>;
-}
-
-function Input(props) {
-  return (
-    <div>
-      <input ref={textInput} />
-      <Button onClick={handleClick} />
-    </div>
-  );
+  return<div>
+    <input onChange={handleChange} value={text}/>
+    <button onClick={function(){onSubmit(text)}}>Add todo</button>
+  </div>
 }
 
 export default Input;
+
+
+
+// let textInput = React.createRef();
+
+// // const [list, setList] = useState(todoLists);
+
+
+
+// function Button(props) {
+//   return <button onClick={props.onClick}> Add me!</button>;
+// }
+
+// function Input(handleClick, props) {
+//   return (
+//     <div>
+//       <input ref={textInput} />
+//       <Button onClick={handleClick} />
+//     </div>
+//   );
+// }
+
+// export default Input;
 
 // we got the value -> textInput.current.value but we don't know how to pass it to todoLists array
 //
