@@ -1,0 +1,15 @@
+.li{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2vh;
+    font-weight: bold;
+    /* display: flex */
+}
+
+.button{
+    margin-left: 3vh;
+    border-radius: 10%;
+    background-color: #03FCBA;
+    box-shadow: inset;
+
+}

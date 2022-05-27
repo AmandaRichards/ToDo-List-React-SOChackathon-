@@ -1,0 +1,30 @@
+.body{
+    border: #3C887E solid 10px;
+    border-style: dotted;
+    text-align: center;
+    justify-content: center;
+    /* margin-left: 50vh; */
+    display:block;
+    max-width: 70vh;
+    min-height: 70vh;
+    font-family:'Courier New', Courier, monospace;
+    background-color: aliceblue ;
+    opacity: 0.8;
+    margin: auto;
+    width: 50%;
+    margin-top: 6vh;
+   
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGF0dGVybnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: cover;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.conatiner{
+    justify-content: center;
+    display: flex;
+}

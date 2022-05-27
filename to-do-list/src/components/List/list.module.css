@@ -1,0 +1,9 @@
+.ul{
+    justify-content: center;
+    display: block;
+}
+
+.container{
+    justify-content: center;
+    display: inline-block
+}

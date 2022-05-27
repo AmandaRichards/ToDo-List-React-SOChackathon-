@@ -1,9 +1,11 @@
+import css from './ListItem.module.css'
+
 function ListItem({ index, text, date, onDelete }) {
   return (
-    <li key={index}>
+    <li className={css.li} key={index}>
       {text}
       <span> {date}</span>
-      <button onClick={onDelete}>Delete</button>
+      <button className={css.button} onClick={onDelete}>Done</button>
     </li>
   )
 }
