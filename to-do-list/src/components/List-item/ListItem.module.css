@@ -13,3 +13,10 @@
     box-shadow: inset;
 
 }
+
+.checkbox{
+    min-height: 2vh;
+    min-width: 2vh;
+    accent-color: aquamarine;
+
+}

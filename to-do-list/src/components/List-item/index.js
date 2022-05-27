@@ -5,7 +5,9 @@ function ListItem({ index, text, date, onDelete }) {
     <li className={css.li} key={index}>
       {text}
       <span> {date}</span>
-      <button className={css.button} onClick={onDelete}>Done</button>
+     
+       <input type="checkbox" className={css.checkbox}  />
+        <button className={css.button} onClick={onDelete}>Remove</button>
     </li>
   )
 }
