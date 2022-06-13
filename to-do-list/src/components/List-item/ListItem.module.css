@@ -9,8 +9,10 @@
 .button{
     margin-left: 3vh;
     border-radius: 10%;
-    background-color: #03FCBA;
+    background-color: aquamarine;
     box-shadow: inset;
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: bolder;
 
 }
 
@@ -18,5 +20,6 @@
     min-height: 2vh;
     min-width: 2vh;
     accent-color: aquamarine;
+    padding-top: 3vh;
 
 }
