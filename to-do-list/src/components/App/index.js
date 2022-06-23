@@ -2,8 +2,7 @@ import "./index.css";
 import Input from "../Input";
 import List from "../List";
 import React, { useState } from "react";
-import todoLists from "../../libs/data";
-import ListItem from "../List-item";
+
 import css from './app.module.css'
 
 function App() {
